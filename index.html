@@ -19,13 +19,30 @@
                     </div>
                     <span>Pencil Color</span>
                 </div>
-                <div class="background">
-
+                <button id="set-color">Set Color</button>
+                <button id="set-background">Set Background</button>
+                <div class="color-card just-margin">
+                    <div class="color-box">
+                        <input type="color" id="bg-color-select">
+                    </div>
+                    <span>Background color</span>
                 </div>
-                <div class="eraser"></div>
+                <button id="color-fill"> Color Fill</button>
+                <button id="color-grabber">Color Grabber</button>
+                <button id="toggle-eraser">Toggle Eraser</button>
+                <button id="toggle-rainbow" class="just-margin">Toggle Rainbow</button>    
+
+                <div class="slider-box ">
+                    <input type="range" value="16" min="1" max="60" id="range-slider">
+                    <div id="progress-bar" style="width: 41.6667%;"></div>
+                </div>
+                <p class="grid-size just-margin">Grid size: <span id="range-left"></span> x <span id="range-rigth"></span></p>
+                <button id="clear-grid">Clear All</button>
+                
             </div>
-            <div class="grid-wrap">h</div>
+            <div id="grid-wrap"></div>
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>

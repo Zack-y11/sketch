@@ -1,39 +1,80 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: white;
     background-color: black;
 }
-.wrap{
+
+.wrap {
     width: 100vw;
-    height: 100vh;
+    height: 113.5vh;
     display: flex;
     flex-direction: column;
     background-color: gray;
 }
-.header{
+
+.header {
     height: 15%;
     text-align: center;
     padding-top: 22px;
 }
-.main{
+
+.main {
     height: 80%;
     display: flex;
 }
-.controls{
+
+.controls {
     background-color: rgb(36, 35, 35);
     margin-left: 10%;
     padding: 10px;
     width: 15%;
-}
-.grid-wrap{
-    padding: 15px;
-    width: 45%;
-    height: 90%;
-    margin-left: 20%;
-    background-color: blue;
-}
-.color-card{
     display: flex;
+    flex-direction: column;
 }
+
+#grid-wrap {
+    padding: 15px;
+    margin-left: 140px;
+    background-color: blue;
+    display: inline-grid;
+    grid-template-columns: repeat(16, 2fr);
+    grid-template-rows: repeat(16, 2fr);
+    /* border: 5px solid rgb(116, 116, 116); */
+    border-radius: 5px;
+    height: 600px;
+    width: 600px;
+}
+
+.color-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid navajowhite;
+    padding: 10px 0 10px 0;
+}
+
+.just-margin {
+    margin-bottom: 20px;
+}
+
+
+button {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 10px 0 10px 0;
+    border: 1px solid navajowhite;
+
+}
+  
+
+.square {
+    background-color: #ffffff;
+    border: 1px solid black;
+}
+.color {
+    background-color: gray;
+    border: 1px solid black;
+  }
+
+  
